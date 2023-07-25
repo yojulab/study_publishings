@@ -13,10 +13,8 @@
 <body>
     <div class="container">
         <div class="fs-3">Callback with modal</div>
-        <form>
-            <button onclick="callbackWithModal('first', clickSomeButton)" class="btn btn-primary">Callback first Button with Modal</button>
-            <button data-bs-toggle="modal" onclick="callbackWithModal('second')" class="btn btn-primary">Callback second Button with Modal</button>
-        </form>
+        <button onclick="callbackWithModal('first', clickSomeButton)" class="btn btn-primary">Callback first Button with Modal</button>
+        <button onclick="callbackWithModal('second')" class="btn btn-primary">Callback second Button with Modal</button>
         <div class="modal" id="modalTarget-Callback">
             <div class="modal-dialog modal-dialog-centered">
                 <div class="modal-content">
