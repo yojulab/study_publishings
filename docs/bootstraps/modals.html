@@ -12,6 +12,39 @@
 
 <body>
     <div class="container">
+        <div class="fs-3">Callback with modal</div>
+        <form>
+            <button onclick="callbackWithModal('first', clickSomeButton)" class="btn btn-primary">Callback first Button with Modal</button>
+            <button data-bs-toggle="modal" onclick="callbackWithModal('second')" class="btn btn-primary">Callback second Button with Modal</button>
+        </form>
+        <div class="modal" id="modalTarget-Callback">
+            <div class="modal-dialog modal-dialog-centered">
+                <div class="modal-content">
+                    <div class="modal-header">헤더</div>
+                    <div class="modal-body">Callback Function</div>
+                    <div class="modal-footer">
+                        <button class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        function clickSomeButton(param){
+            console.log(`clickSomeButton() : ${param}`);
+        }
+        function callbackWithModal(param, callbackFunc){
+            let modal = document.querySelector("#modalTarget-Callback");
+            const modalInstance = new bootstrap.Modal(modal);
+            modalInstance.show();            
+
+            if (callbackFunc != null){
+                callbackFunc(param);
+            }
+        }
+    </script>
+    <div class="container">
         <div class="fs-3">Centers</div>
         <a data-bs-toggle="modal" href="#modalTarget-center" class="btn btn-primary">Center Button</a>
         <div class="modal" id="modalTarget-center">
