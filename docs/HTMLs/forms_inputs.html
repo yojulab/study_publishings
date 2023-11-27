@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div>radio buttons</div>
+    <form action="./links.html" method="get">
+        <div>
+            연구소 이름 : <input type="text" name="lab_name" value="yojulab" id="">
+        </div> 
+        <div>
+            <div>- 희망 사항 쓰기 -</div>
+            <div>
+                <textarea name="hope_write" id="" cols="30" rows="10"></textarea>
+            </div>
+        </div>
+        <div>
+            <button type="submit">links로 정보 전달</button>
+            <button type="reset">같은 form 내 정보 재설정</button>
+        </div>   
+    </form>
+    <hr>
+
+    <div>radio buttons</div>
+    <form action="./links.html" method="get">
+        <div>
+            연구소 이름 : <input type="text" name="lab_name" value="yojulab" id="">
+        </div> 
+        <div>
+            <div>- 희망 사항 선택 -</div>
+            <div>
+                강아지 말 희망 
+                <input type="radio" name="hope_lang" value="dog_lang" id="">
+            </div>
+            <div>
+                <label for="hopecatlang">고양이 말 희망</label> 
+                <input type="radio" name="hope_lang" value="cat_lang" id="hopecatlang">
+            </div>
+        </div>
+        <div>
+            <button type="submit">links로 정보 전달</button>
+            <button type="reset">같은 form 내 정보 재설정</button>
+        </div>   
+    </form>
+    <hr>
+
+    <div>checkboxes</div>
+    <form action="./links.html" method="get">
+        <div>
+            연구소 이름 : <input type="text" name="lab_name" value="yojulab" id="">
+        </div> 
+        <div>
+            <div>
+                강아지 말 희망 
+                <input type="checkbox" name="dog_lang" id="">
+            </div>
+            <div>
+                <label for="catlang">고양이 말 희망</label> 
+                <input type="checkbox" name="cat_lang" id="catlang">
+            </div>
+        </div>
+        <div>
+            <button type="submit">links로 정보 전달</button>
+            <button type="reset">같은 form 내 정보 재설정</button>
+        </div>   
+    </form>
+    <hr>
+    <!-- form tag 사이트간 정보 전달 -->
+    <div>input으로 정보 전달 목적</div>
+    <form action="./welcome.html" method="get">
+        <div>
+            양말 이름 : <input type="text" name="socks" id="">
+        </div>
+        <div>
+            양말 갯수 : <input type="text" name="socks_count" id="">
+        </div>
+        <div>
+            <button>welcome.html으로 전송</button>
+        </div>
+    </form>
+    <hr>
+
+    <!-- form tag 사이트간 정보 전달 -->
+    <div>form tag 사이트간 정보 전달</div>
+    <form action="./welcome.html" method="get">
+        <button>welcome.html으로 전송</button>
+    </form>
+    <hr>
+</body>
+</html>
